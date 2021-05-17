@@ -10,7 +10,7 @@ def integrate(data, unit_conv, limits, unit='ppm', noise_limits=None,
     Functional form of integration is:
 
     .. math::
-        value = \sum_a^b s(x_{i}) dx
+        value = \\sum_a^b s(x_{i}) dx
 
     Where:
     s is the signal, a and b are the limits of integration and dx is the width
@@ -19,7 +19,7 @@ def integrate(data, unit_conv, limits, unit='ppm', noise_limits=None,
     The integration error due to baseline noise is calculated as:
 
     .. math::
-        error = \sigma_{vol} = \sigma \sqrt{n}
+        error = \\sigma_{vol} = \\sigma \\sqrt{n}
 
     if the noise_limits are set.
 
@@ -113,7 +113,7 @@ def ndintegrate(data, unit_conv, limits, unit='ppm', noise_limits=None):
     The integration error due to baseline noise is calculated as:
 
     .. math::
-        error = \sigma_{vol} = \sigma \sqrt{\prod_i^{d} n_{i}},
+        error = \\sigma_{vol} = \\sigma \\sqrt{\\prod_i^{d} n_{i}},
 
     if the noise_limits are set.
 
